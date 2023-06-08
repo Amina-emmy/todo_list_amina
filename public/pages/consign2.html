@@ -4,16 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="../css/app.css">
     <title>con 2</title>
 </head>
 <body>
-    
+    <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+        <div class="d-flex justify-content-center ">
+            <input id="task" class="p-1 me-2" type="text" placeholder="Enter your task">
+            <button id="send" class="btn btn-darkbrown px-3">Send</button>
+        </div>
+        <div class="bg-beige boite d-flex justify-content-center text-center">
+            <div id="todo" class="bg-todo colon">
+                <!-- at first here les balises <p> & <i> vont etre creer par js -->
+            </div>
+            <div id="doing" class="bg-doing colon">
+
+            </div>
+            <div id="done" class="bg-done colon">
+
+            </div>
+        </div>
+    </div>
 
 
 
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="../js/con2.js"></script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+//? todo list boite
+.boite{
+    width: 400px;
+    height: auto;
+    border: 1px solid $darkbrown;
+}
+#todoT{
+    margin-top: 30px;
+}
+.checked{
+    background-color: rgb(113, 212, 113);
+}

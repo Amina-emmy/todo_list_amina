@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="../css/app.css">
     <title>con 1</title>
 </head>
+
 <body>
-    
+    <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+        <div class="d-flex justify-content-center ">
+            <input id="task" class="p-1 me-2" type="text" placeholder="Enter your task">
+            <button id="send" class="btn btn-darkbrown px-3">Send</button>
+        </div>
+        <!-- ^ SELECT ------------------------>
+        <div class="dropdown mt-5">
+            <a class="btn btn-beige border border-darkbrown dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select tasks
+            </a>
+            <ul class="dropdown-menu">
+              <li><a id="all_tasks" class="dropdown-item" href="#">All tasks</a></li>
+              <li><a id="all_Vtasks" class="dropdown-item" href="#">Valid tasks</a></li>
+              <li><a id="all_NV" class="dropdown-item" href="#">Non valid tasks</a></li>
+            </ul>
+          </div>
+        <!-- ^ SELECT end ------------------------>
+        <img id="todoT" src="../images/todoTitle.png" alt="todoTitre" srcset="" width="180px" height="60px">
+        <div class="bg-beige boite d-flex justify-content-center text-center">
+            <div class="p_task">
+                <!-- here les balises <p> & <i> vont etre creer par js -->
+            </div>
+        </div>
+    </div>
 
 
 
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="../js/con1.js"></script>
 </body>
+
 </html>

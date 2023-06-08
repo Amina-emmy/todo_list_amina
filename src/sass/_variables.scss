@@ -3,4 +3,22 @@
 @import "../../node_modules/bootstrap/scss/variables";
 
 
+//* Mes variables couleurs :
+$darkbrown : #89543d;
+$beige : #FFF5F1;
+$brown : #a67c52;
 
+$todo:rgb(145, 140, 140);
+$doing:rgb(129, 161, 77);
+$done:rgb(10, 153, 10);
+
+$custom-colors : (
+    "darkbrown" : $darkbrown ,
+    "beige" : $beige ,
+    "brown" : $brown ,
+    "todo" : $todo,
+    "doing" : $doing,
+    "done"  : $done,
+);
+
+$theme-colors : map-merge($theme-colors , $custom-colors);
