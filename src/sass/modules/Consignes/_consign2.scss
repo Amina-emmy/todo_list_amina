@@ -1,12 +1,18 @@
 //? todo list boite
-.boite{
+.box-colns{
     width: 100vw;
     height: 100%;
-    border: 1px solid $darkbrown;
+    border: $darkbrown;
     margin-top: 40px;
 }
 .colon{
-    margin: 20px;
+    border: 2px solid $darkbrown;
+    margin: 15px;
     width: 40%;
-    height: 500px;
+    height: 520px;
+}
+h1{
+    color:$darkbrown;
+    font-family:cursive;
+    text-decoration: underline;
 }
