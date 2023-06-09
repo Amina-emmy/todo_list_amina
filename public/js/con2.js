@@ -179,7 +179,6 @@ const createTask = (div_wanted) => {
     para.appendChild(node);
     div_wanted.appendChild(para);
 }
-
 //* addEventListener to the btn & the key Enter
 send.addEventListener("click", () => {
     //! missing : condition if task alredy existed

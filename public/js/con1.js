@@ -1,6 +1,6 @@
 let input = document.querySelector("#task");
 let btn_send = document.querySelector("#send");
-let div_boite = document.querySelector(".boite"); // i guess i didn't use it
+let div_boite = document.querySelector(".boite"); // i guess i didn't use it :)
 let div_pTask = document.querySelector(".p_task");
 
 //* create <p> contains input.value + its 3 icons
@@ -8,7 +8,7 @@ let tasks = []; //tab des p
 let valid_tasks = [];
 let nonValid_tasks = [];
 
-const add_Ptask = () => {
+const add_icons= (div_pTask,para) => {
     //^ create 3 icons + their functions
     //? check icon
     let ico_check = document.createElement("i");
@@ -29,7 +29,6 @@ const add_Ptask = () => {
             valid_tasks.push(para); //add it to tab of valid_tasks
             nonValid_tasks.splice(idxP_NV, 1); //remove it from tab of nonValid_tasks
         }
-        // para.classList.toggle("checked");
     });
 
     //? delete icon
@@ -71,12 +70,15 @@ const add_Ptask = () => {
             alert("task will be modified");
         }
     });
+}
 
+const add_Ptask = () => {
     //^ create <p> contains input.value
     let para = document.createElement("p");
     para.style.fontWeight = "bold";
     let node = document.createTextNode(input.value);
     para.appendChild(node);
+    add_icons(div_pTask,para);
     div_pTask.appendChild(para);
     //^ push contenu de <p> => our task
     tasks.push(para);
@@ -126,12 +128,13 @@ all_tasks.addEventListener("click", () => {
     }
 });
 
-//! icons must disappear they don't :/
+//! icons must disappear with their task they don't :/
 //^ valid tasks
 all_Vtasks.addEventListener("click", () => {
     for (let index = 0; index < nonValid_tasks.length; index++) {
         let non_VT = nonValid_tasks[index];
         non_VT.style.display = "none";
+
         for (let idx = 0; idx < valid_tasks.length; idx++) {
             let vT = valid_tasks[idx];
             vT.style.display = "block";
