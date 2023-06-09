@@ -13,7 +13,7 @@ const create_icons_select = (divParent, p) => {
     let divS = document.createElement("div");
     divParent.appendChild(divS);
     divS.classList.add("btn-group");
-    divS.style.display = "flex";
+    divS.classList.add("d-flex","mx-5");
     //& btn
     let btnS = document.createElement("button");
     btnS.classList.add("btn", "btn-secondary", "dropdown-toggle", "btn-sm");

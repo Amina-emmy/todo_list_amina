@@ -126,7 +126,7 @@ all_tasks.addEventListener("click", () => {
     }
 });
 
-//! icons must disappear
+//! icons must disappear they don't :/
 //^ valid tasks
 all_Vtasks.addEventListener("click", () => {
     for (let index = 0; index < nonValid_tasks.length; index++) {
