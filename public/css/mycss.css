@@ -1,0 +1,25 @@
+.guide h1{
+    color:#8a3903;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+}
+.bg-beige{
+    background-color: #FFF5F1;
+}
+/* ********************************** consigne 2 */
+.box-colns{
+    width: 100vw;
+    border: #89543d;
+    margin-top: 40px;
+}
+.colon{
+    border: 2px solid #89543d;
+    margin: 15px;
+    width: 40%;
+    height: auto;
+}
+h1{
+    color:#89543d;
+    font-family:cursive;
+    text-decoration: underline;
+}
