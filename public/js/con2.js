@@ -154,7 +154,7 @@ const create_icons_select = (divParent, p) => {
     ico_modify.addEventListener("click", () => {
         let makeSure = confirm(`sure you wanna modify this task "${p.textContent} "`);
         if (makeSure == true) {
-            let askModif = prompt(`task "${p.textContent}" Change it to --> `);
+            let askModif = prompt(`task "${p.textContent}" Change it to --> `).trim();
             if (p.textContent != askModif) {
                 // when i modify p.textContent icons disappear, so i put icons after p.textContent
                 p.textContent = askModif;
@@ -174,7 +174,7 @@ const createTask = (div_wanted) => {
     let para = document.createElement("p");
     para.style.fontWeight = "bold";
     para.style.fontSize = "18px";
-    let node = document.createTextNode(input.value);
+    let node = document.createTextNode(input.value.trim());
     create_icons_select(div_wanted, para);
     para.appendChild(node);
     div_wanted.appendChild(para);

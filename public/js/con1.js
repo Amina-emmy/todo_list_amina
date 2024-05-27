@@ -125,6 +125,10 @@ all_tasks.addEventListener("click", () => {
     for (let index = 0; index < tasks.length; index++) {
         let task = tasks[index];
         task.style.display = "block";
+        // to show its icons as well
+        task.previousElementSibling.style.display="";
+        task.previousElementSibling.previousElementSibling.style.display="";
+        task.previousElementSibling.previousElementSibling.previousElementSibling.style.display="";
     }
 });
 
@@ -133,11 +137,18 @@ all_tasks.addEventListener("click", () => {
 all_Vtasks.addEventListener("click", () => {
     for (let index = 0; index < nonValid_tasks.length; index++) {
         let non_VT = nonValid_tasks[index];
-        non_VT.style.display = "none";
+        non_VT.style.display = "none"; 
+        // to hide its icons as well
+        non_VT.previousElementSibling.style.display="none";
+        non_VT.previousElementSibling.previousElementSibling.style.display="none";
+        non_VT.previousElementSibling.previousElementSibling.previousElementSibling.style.display="none";
 
         for (let idx = 0; idx < valid_tasks.length; idx++) {
             let vT = valid_tasks[idx];
             vT.style.display = "block";
+            vT.previousElementSibling.style.display="";
+            vT.previousElementSibling.previousElementSibling.style.display="";
+            vT.previousElementSibling.previousElementSibling.previousElementSibling.style.display="";
         }
     }
 });
@@ -147,9 +158,17 @@ all_NVtasks.addEventListener("click", () => {
     for (let index = 0; index < valid_tasks.length; index++) {
         let vT = valid_tasks[index];
         vT.style.display = "none";
+        vT.previousElementSibling.style.display="none";
+        vT.previousElementSibling.previousElementSibling.style.display="none";
+        vT.previousElementSibling.previousElementSibling.previousElementSibling.style.display="none";
+        
         for (let idx = 0; idx < nonValid_tasks.length; idx++) {
             let non_VT = nonValid_tasks[index];
             non_VT.style.display = "block";
+
+            non_VT.previousElementSibling.style.display="";
+            non_VT.previousElementSibling.previousElementSibling.style.display="";
+            non_VT.previousElementSibling.previousElementSibling.previousElementSibling.style.display="";
         }
     }
 });
