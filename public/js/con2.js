@@ -129,18 +129,21 @@ const create_icons_select = (divParent, p) => {
         if (div_todo.id == "todo") {
             div_todo.removeChild(p);
             div_todo.removeChild(divS);
+            alert("task will be deleted");
         }
     });
     ico_rm.addEventListener("click", () => {
         if (div_doing.id == "doing") {
             div_doing.removeChild(p);
             div_doing.removeChild(divS);
+            alert("task will be deleted");
         }
     });
     ico_rm.addEventListener("click", () => {
         if (div_done.id == "done") {
             div_done.removeChild(p);
             div_done.removeChild(divS);
+            alert("task will be deleted");
         }
     });
 
